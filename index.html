@@ -3,225 +3,1507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishwakarma - Web Developer</title>
+    <title>Ankit Vishwakarma | DevOps / Cloud & SRE Engineer • AI-Native Builder</title>
+    <meta name="description" content="Portfolio of Ankit Vishwakarma – DevOps, SRE, and Cloud Engineer specializing in AWS production environments, CI/CD automation, compliance (SOC 2, ISO 27001, HIPAA), and AI-native systems.">
+    <meta name="author" content="Ankit Vishwakarma">
+    
+    <!-- Open Graph / Meta for LinkedIn & Sharing -->
+    <meta property="og:title" content="Ankit Vishwakarma | DevOps / Cloud & SRE Engineer">
+    <meta property="og:description" content="Explore production AWS infrastructure, SRE monitoring, AI-native platforms, and full-stack cloud projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./my_image.jpeg">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230284c7'/><text x='16' y='21' font-family='monospace' font-weight='bold' font-size='14' fill='%23ffffff' text-anchor='middle'>AV</text></svg>">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+
+    <!-- Schema.org JSON-LD Structured Data for Search & Recruiter Discovery -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ankit Vishwakarma",
+      "jobTitle": "DevOps / Cloud & SRE Engineer",
+      "description": "DevOps, SRE, and Cloud Engineer specializing in AWS production environments, CI/CD automation, compliance (SOC 2, ISO 27001, HIPAA), and AI-native systems.",
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Parul University"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Laxmi Vidyapeeth"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Valsad",
+        "addressRegion": "Gujarat",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/ankit-vishwakarma-155614228",
+        "https://github.com/vishankit20"
+      ]
+    }
+    </script>
+
+    <!-- Fonts & Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            400: '#0284c7',
+                            500: '#0369a1',
+                            cyan: '#0891b2',
+                            emerald: '#059669',
+                            violet: '#7c3aed',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f1f5f9;
+            /* Multi-Point Ambient Aurora Canvas - vivid refractions for 80% clear glass */
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.35) 0px, transparent 50%),
+                radial-gradient(at 100% 10%, rgba(139, 92, 246, 0.30) 0px, transparent 50%),
+                radial-gradient(at 25% 35%, rgba(16, 185, 129, 0.25) 0px, transparent 45%),
+                radial-gradient(at 85% 55%, rgba(56, 189, 248, 0.30) 0px, transparent 50%),
+                radial-gradient(at 15% 75%, rgba(244, 114, 182, 0.28) 0px, transparent 45%),
+                radial-gradient(at 90% 90%, rgba(99, 102, 241, 0.30) 0px, transparent 50%);
+            background-attachment: fixed;
+            background-size: cover;
+            color: #334155;
+            overflow-x: hidden;
         }
-        .bg-grid {
-            background-image: linear-gradient(to right, rgba(203, 213, 225, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(203, 213, 225, 0.2) 1px, transparent 1px);
-            background-size: 24px 24px;
+
+        /* 80% Crystal-Clear Frosted Glass Panels (20% tint = 80% clear glass) */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.80);
+            box-shadow: 0 10px 32px 0 rgba(15, 23, 42, 0.05), inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-panel:hover {
+            background: rgba(255, 255, 255, 0.28);
+            border-color: rgba(56, 189, 248, 0.65);
+            box-shadow: 0 16px 40px 0 rgba(14, 165, 233, 0.16), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+            transform: translateY(-2px);
+        }
+
+        /* 80% Frosted Glass Navigation */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.70);
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.03);
+        }
+
+        /* Crisp Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #0284c7 0%, #4f46e5 50%, #9333ea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-text-emerald {
+            background: linear-gradient(135deg, #059669 0%, #0284c7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0284c7;
+        }
+
+        /* Status Pulsing Dot */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.3); opacity: 0; }
+            100% { transform: scale(0.95); opacity: 0; }
+        }
+        .status-dot-pulse {
+            animation: pulse-ring 2s infinite ease-in-out;
         }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-300 bg-grid">
+<body class="antialiased selection:bg-sky-500/20 selection:text-sky-900">
 
-    
-    <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-white">Ankit Vishwakarma</a>
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
-                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
-                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
-                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+    <!-- Soft Ambient Light Glows for 80% Glass Refraction -->
+    <div class="fixed top-10 left-10 w-[38rem] h-[38rem] bg-sky-400/25 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+    <div class="fixed top-1/3 right-5 w-[38rem] h-[38rem] bg-indigo-400/22 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-10 w-[36rem] h-[36rem] bg-emerald-400/20 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 right-20 w-[36rem] h-[36rem] bg-pink-400/22 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="glass-nav sticky top-0 z-50 transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Brand / Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg font-mono shadow-md shadow-sky-500/25 group-hover:scale-105 transition-transform">
+                    AV
+                </div>
+                <div>
+                    <span class="text-slate-900 font-bold text-lg tracking-tight block group-hover:text-sky-600 transition-colors">Ankit Vishwakarma</span>
+                    <span class="text-xs font-mono text-slate-500 block -mt-0.5">DevOps • Cloud & SRE</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="nav-link text-slate-600 hover:text-sky-600 transition-colors">About</a>
+                <a href="#skills" class="nav-link text-slate-600 hover:text-sky-600 transition-colors">Skills</a>
+                <a href="#experience" class="nav-link text-slate-600 hover:text-sky-600 transition-colors">Experience</a>
+                <a href="#projects" class="nav-link text-slate-600 hover:text-sky-600 transition-colors">Projects</a>
+                <a href="#education" class="nav-link text-slate-600 hover:text-sky-600 transition-colors">Education</a>
+                <a href="#certifications" class="nav-link text-slate-600 hover:text-sky-600 transition-colors">Certifications</a>
             </div>
-             
-            <a href="./resume_default.pdf" download class="hidden md:block bg-sky-500 hover:bg-sky-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors">Download Resume</a>
-            <button id="mobile-menu-button" class="md:hidden text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+            <!-- Actions CTA -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-sky-500/20 transition-all duration-200 hover:-translate-y-0.5">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-button" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 text-slate-700 hover:text-slate-900 hover:bg-slate-200/60 rounded-lg transition-colors">
+                <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+                <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
         </nav>
-        
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
-            <a href="#about" class="block py-2 px-6 text-sm hover:bg-slate-700">About</a>
-            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-slate-700">Projects</a>
-            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-slate-700">Skills</a>
-            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-slate-700">Contact</a>
-            
-            <a href="./resume_default.pdf" download class="block py-2 px-6 text-sm hover:bg-slate-700">Download Resume</a>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200/80 bg-white/80 backdrop-blur-xl px-6 py-6 space-y-4 shadow-lg">
+            <a href="#about" class="mobile-nav-link block text-slate-700 hover:text-sky-600 font-medium py-1">About</a>
+            <a href="#skills" class="mobile-nav-link block text-slate-700 hover:text-sky-600 font-medium py-1">Skills</a>
+            <a href="#experience" class="mobile-nav-link block text-slate-700 hover:text-sky-600 font-medium py-1">Experience</a>
+            <a href="#projects" class="mobile-nav-link block text-slate-700 hover:text-sky-600 font-medium py-1">Projects</a>
+            <a href="#education" class="mobile-nav-link block text-slate-700 hover:text-sky-600 font-medium py-1">Education</a>
+            <a href="#certifications" class="mobile-nav-link block text-slate-700 hover:text-sky-600 font-medium py-1">Certifications</a>
+            <a href="#contact" class="mobile-nav-link block text-slate-700 hover:text-sky-600 font-medium py-1">Contact</a>
+            <div class="pt-2">
+                <a href="#contact" class="mobile-nav-link flex items-center justify-center gap-2 w-full bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2.5 rounded-xl shadow-md">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    <span>Get in Touch</span>
+                </a>
+            </div>
         </div>
     </header>
 
-    
-    <main class="container mx-auto px-6 py-12">
+    <main class="max-w-7xl mx-auto px-6 py-10">
 
-        
-        <section id="hero" class="text-center py-20">
-            
-            <img src="https://placehold.co/128x128/0ea5e9/ffffff?text=AV" alt="Ankit's_image" class="w-32 h-32 mx-auto rounded-full mb-6 border-4 border-slate-700">
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Hi, I'm Ankit Vishwakarma</h1>
-            <p class="text-lg md:text-xl text-sky-400 mb-8">A Passionate Web Developer from Gujarat</p>
-            <p class="max-w-2xl mx-auto text-slate-400 mb-10">I specialize in creating modern, responsive, and user-friendly web applications. Let's build something amazing together.</p>
-            <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors text-lg">Get in Touch</a>
-            
-            <div class="mt-8 flex justify-center gap-6">
-               
-                <a href="https://github.com/vishankit20" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
-                </a>
+        <!-- ================= HERO SECTION ================= -->
+        <section id="hero" class="pt-8 pb-16 lg:pt-12 lg:pb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <a href="https://www.linkedin.com/in/ankit-vishwakarma-155614228" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
-            </div>
-        </section>
+                <!-- Left Column: Copy & CTAs -->
+                <div class="lg:col-span-7 text-left space-y-6">
+                    
+                    <!-- Availability Badge (80% Glass) -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/20 border border-emerald-500/30 text-emerald-700 text-xs font-mono font-medium tracking-wide shadow-sm backdrop-blur-md">
+                        <span class="relative flex h-2 w-2">
+                            <span class="status-dot-pulse absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        </span>
+                        Available for DevOps, SRE & Cloud Engineering Roles
+                    </div>
 
-        
-        <section id="about" class="py-20">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/3">
-                    <img src="./my_image.jpeg" alt="About Ankit" class="rounded-lg shadow-lg">
-                </div>
-                <div class="md:w-2/3">
-                    <p class="text-slate-400 mb-4">Hi, I’m Ankit Vishwakarma</p>
-                    <p class="text-slate-400 mb-4">I’m a developer passionate about building smart, scalable, and user-friendly digital solutions. Currently, I’m pursuing my MCA with a specialization in Cloud Computing, where I’m exploring how cloud technologies can shape the future of software.</p>
-                    <p class="text-slate-400 mb-4">I enjoy working across different areas of tech—from web and mobile app development to cloud-based systems. My toolkit includes Java, Python, SQL, PHP, ASP.NET, Android development, and I’m always curious to learn and experiment with new technologies.</p>
-                    <p class="text-slate-400 mb-4">My long-term vision is to grow into a Cloud Architect, helping organizations design secure, efficient, and future-ready systems. But more than titles, I love solving real-world problems and turning ideas into impactful solutions.</p>
-                    <p class="text-slate-400">When I’m not coding, you’ll usually find me reading about emerging tech, brainstorming new project ideas, or exploring creative ways to level up my skills.</p>
-                </div>
-            </div>
-        </section>
+                    <!-- Main Heading -->
+                    <div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+                            Engineering Resilient <br class="hidden sm:inline">
+                            <span class="gradient-text">Cloud Infrastructure</span> & <br class="hidden sm:inline">
+                            <span class="gradient-text-emerald">AI-Native Systems</span>
+                        </h1>
+                        <p class="text-xl sm:text-2xl font-semibold text-slate-700 mt-4 flex items-center gap-2">
+                            <span>Ankit Vishwakarma</span>
+                            <span class="text-sky-700 font-mono text-sm px-2.5 py-0.5 rounded-md bg-white/20 border border-sky-300 shadow-sm backdrop-blur-sm">MCA Cloud Computing</span>
+                        </p>
+                    </div>
 
-       
-        <section id="projects" class="py-20">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/0f172a/38bdf8?text=Project+One" alt="Project One" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
-                        <p class="text-slate-400 mb-4">An e-commerce platform will be available, offering a wide range of electronic products. Users can browse through the platform and find products that meet their specific needs, making it easy for them to make purchases.</p>
-                        <div class="flex space-x-4">
-                            
-                            <a href="https://vishankit20.github.io/ecom/" class="text-sky-400 hover:underline">View Demo</a>
-                            <a href="https://github.com/vishankit20/ecom.git" class="text-sky-400 hover:underline">Source Code</a>
+                    <!-- Role Tagline / Summary excerpt -->
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        DevOps, Cloud & SRE Engineer with hands-on experience architecting scalable AWS production environments, SRE monitoring pipelines, and CI/CD automation. An AI-native builder turning ideas into secure, compliant, high-availability enterprise applications.
+                    </p>
+
+                    <!-- Core Attributes Badges (80% Glass) -->
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-700 pt-1">
+                        <span class="px-3 py-1.5 rounded-lg bg-white/20 border border-white/80 shadow-sm backdrop-blur-md flex items-center gap-1.5">
+                            <span class="text-sky-600 font-bold">⚡</span> AWS Production Architecture
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-white/20 border border-white/80 shadow-sm backdrop-blur-md flex items-center gap-1.5">
+                            <span class="text-indigo-600 font-bold">🛡️</span> SOC 2 • ISO 27001 • HIPAA
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-white/20 border border-white/80 shadow-sm backdrop-blur-md flex items-center gap-1.5">
+                            <span class="text-emerald-600 font-bold">🔄</span> GitHub Actions & CI/CD
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-white/20 border border-white/80 shadow-sm backdrop-blur-md flex items-center gap-1.5">
+                            <span class="text-amber-600 font-bold">🤖</span> AI-Native Engineering
+                        </span>
+                    </div>
+
+                    <!-- CTA Buttons & Social Links -->
+                    <div class="flex flex-wrap items-center gap-4 pt-3">
+                        <a href="#projects" class="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-sky-500/25 transition-all hover:translate-y-[-2px]">
+                            <span>Explore Projects</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                        <a href="#contact" class="inline-flex items-center gap-2 glass-panel text-slate-800 hover:text-sky-600 font-semibold px-6 py-3 rounded-xl transition-all">
+                            <span>Get In Touch</span>
+                        </a>
+
+                        <!-- Social Buttons (80% Glass) -->
+                        <div class="flex items-center gap-3 pl-2 sm:pl-4 border-l border-slate-300">
+                            <a href="https://github.com/vishankit20" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="p-2.5 rounded-xl bg-white/20 hover:bg-white text-slate-700 hover:text-sky-600 transition-colors border border-white/80 shadow-sm backdrop-blur-md" title="GitHub">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/ankit-vishwakarma-155614228" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="p-2.5 rounded-xl bg-white/20 hover:bg-white text-slate-700 hover:text-sky-600 transition-colors border border-white/80 shadow-sm backdrop-blur-md" title="LinkedIn">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <a href="mailto:vishankit20@gmail.com" aria-label="Send Email" class="p-2.5 rounded-xl bg-white/20 hover:bg-white text-slate-700 hover:text-sky-600 transition-colors border border-white/80 shadow-sm backdrop-blur-md" title="Email">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <!-- Project Card 2 -->
-                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/0f172a/38bdf8?text=Project+Two" alt="Project Two" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Android Music Player App</h3>
-                        <p class="text-slate-400 mb-4">Android music player app built with Java and XML, offering seamless audio playback by combining local files with online streaming, following standard Android development practices.</p>
-                        <div class="flex space-x-4">
+
+                <!-- Right Column: Interactive Profile & Terminal Visual -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                    
+                    <!-- Profile Card in 80% Glass -->
+                    <div class="w-full max-w-md relative group">
+                        
+                        <!-- Glowing ambient shadow -->
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-sky-400 via-indigo-400 to-emerald-400 opacity-20 blur-xl group-hover:opacity-30 transition duration-500"></div>
+
+                        <div class="relative glass-panel rounded-3xl p-6 shadow-xl space-y-6">
                             
-                            <a href="https://github.com/vishankit20/bellplay_apk" class="text-sky-400 hover:underline">Get APK</a>
-                            <a href="https://github.com/vishankit20/Bellplay" class="text-sky-400 hover:underline">Source Code</a>
+                            <!-- Header Info with Photo -->
+                            <div class="flex items-center gap-4">
+                                <div class="relative">
+                                    <img src="./my_image.jpeg" alt="Ankit Vishwakarma" class="w-20 h-20 rounded-2xl object-cover border-2 border-sky-400/80 shadow-md">
+                                    <div class="absolute -bottom-1 -right-1 bg-emerald-500 w-4 h-4 rounded-full border-2 border-white" title="Active SRE Status"></div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h2 class="text-slate-900 font-bold text-lg">Ankit Vishwakarma</h2>
+                                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold">ONLINE</span>
+                                    </div>
+                                    <p class="text-xs text-slate-500 font-mono mt-0.5">Valsad, Gujarat, India</p>
+                                    <div class="flex items-center gap-2 mt-2">
+                                        <span class="inline-block text-[11px] font-medium text-sky-800 bg-sky-50 border border-sky-200 px-2 py-0.5 rounded">9 Mo. Intern @ MyOnsite</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Interactive Mock Terminal Window (Frosted Dark for Crisp Code Readability) -->
+                            <div class="rounded-2xl bg-slate-900/90 border border-slate-800/80 p-4 font-mono text-xs shadow-inner backdrop-blur-md">
+                                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 mb-3 text-slate-400">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+                                    </div>
+                                    <span class="text-[11px] text-slate-300">ankit@cloud-terminal:~</span>
+                                    <span class="text-[10px] text-slate-500">zsh</span>
+                                </div>
+                                <div class="space-y-2 text-slate-300 leading-relaxed">
+                                    <div class="text-slate-400">
+                                        <span class="text-emerald-400">$</span> agy inspect --cluster aws-production
+                                    </div>
+                                    <div class="text-sky-300 pl-3 border-l border-slate-700">
+                                        ✔ VPC Topology: Multi-AZ (Subnets, NAT, IGW)<br>
+                                        ✔ SRE Telemetry: CloudWatch MTTR optimization active<br>
+                                        ✔ Compliance: HIPAA & SOC 2 audit policies enforced<br>
+                                        ✔ CI/CD: Automated GitHub Actions pipeline deployed
+                                    </div>
+                                    <div class="text-slate-400 pt-1">
+                                        <span class="text-emerald-400">$</span> cat capabilities.txt
+                                    </div>
+                                    <div class="text-slate-300 pl-3 border-l border-slate-700 text-[11px]">
+                                        ["DevOps", "Kubernetes", "Docker", "Cost Optimization", "AI Workforces"]
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Stats Strip (80% Glass) -->
+                            <div class="grid grid-cols-3 gap-2 pt-1 text-center font-mono">
+                                <div class="bg-white/20 p-2.5 rounded-xl border border-white/80 shadow-sm backdrop-blur-sm">
+                                    <div class="text-sky-600 font-bold text-base">9 Mo.</div>
+                                    <div class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Enterprise</div>
+                                </div>
+                                <div class="bg-white/20 p-2.5 rounded-xl border border-white/80 shadow-sm backdrop-blur-sm">
+                                    <div class="text-emerald-600 font-bold text-base">8.16</div>
+                                    <div class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">MCA CGPA</div>
+                                </div>
+                                <div class="bg-white/20 p-2.5 rounded-xl border border-white/80 shadow-sm backdrop-blur-sm">
+                                    <div class="text-indigo-600 font-bold text-base">6+</div>
+                                    <div class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Deployments</div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
-                <!-- Project Card 3 -->
-                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/0f172a/38bdf8?text=Project+Three" alt="Project Three" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Celebrities Web Application</h3>
-                        <p class="text-slate-400 mb-4">A platform where all Hollywood actors and actresses are featured, along with their upcoming events and movies. Users can browse actors and actresses by country, explore movies by film industry, get detailed information about film industries, and search for movies and actors.</p>
-                        <div class="flex space-x-4">
-                            
-                            <a href="https://vishankit20.github.io/global-certificate-project/" class="text-sky-400 hover:underline">View Demo</a>
-                            <a href="https://github.com/vishankit20/global-certificate-project.git" class="text-sky-400 hover:underline">Source Code</a>
-                        </div>
-                    </div>
+
+            </div>
+        </section>
+
+        <!-- ================= STATS / IMPACT METRICS (80% GLASS KPI CARDS) ================= -->
+        <section class="py-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="glass-panel p-6 rounded-2xl text-center">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono">9+ Months</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Healthcare AI/ML & Cloud Exp</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-sky-600 font-mono">HIPAA & SOC 2</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Security & Access Governance</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-emerald-600 font-mono">AWS Well-Arch</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Cost, DR & IAM Hardening</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600 font-mono">AI-Native</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Autonomous Systems Builder</div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="py-20">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">My Skills</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="flex flex-wrap justify-center gap-4">
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">HTML</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">CSS</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">JavaScript</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">Java</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">Python</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">Node.js</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">PHP</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">MongoDB</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">.NET</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">SQL</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">Google Cloud</span>
-                    <span class="bg-slate-700 text-slate-300 text-sm font-medium px-4 py-2 rounded-full">Git & GitHub</span>
-                </div>
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about" class="py-16">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="w-8 h-[2px] bg-sky-500 inline-block"></span>
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-600 font-bold">Background & Philosophy</span>
             </div>
-        </section>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-8">Professional Summary</h2>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">Contact Me</h2>
-            <div class="max-w-lg mx-auto bg-slate-800 p-8 rounded-lg shadow-lg">
-                <p class="text-center text-slate-400 mb-8">Have a project in mind or just want to say hello? Feel free to reach out!</p>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 
-                <form action="https://formspree.io/f/mrbapyyv" method="POST">
-                    <div class="mb-4">
-                        <label for="name" class="block text-slate-400 mb-2">Name</label>
-                        <input type="text" id="name" name="name" class="w-full bg-slate-700 border border-slate-600 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500" required>
+                <!-- Main Narrative in 80% Glass -->
+                <div class="lg:col-span-7 space-y-5 text-slate-700 leading-relaxed text-base">
+                    <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-4">
+                        <p class="text-lg text-slate-900 font-semibold">
+                            I am an <strong class="text-sky-600 font-bold">MCA graduate specialized in Cloud Computing</strong>, automation, and infrastructure monitoring, with hands-on DevOps / SRE / Cloud Engineering experience focused on AWS in production environments.
+                        </p>
+                        <p>
+                            As an <strong class="text-emerald-600 font-bold">AI-native builder</strong> with deep prompt engineering expertise, I focus on turning complex ideas into fully functional enterprise applications. My work bridges cloud architectural best practices with modern AI workflows—delivering production resilience, automated workflows, and high velocity.
+                        </p>
+                        <p>
+                            I hold deep hands-on expertise in core AWS infrastructure: <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">EC2</code>, <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">VPC</code> (Subnets, Route Tables, NAT, IGW), <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">IAM</code>, <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">S3</code>, <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">RDS</code>, <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">EKS</code>, <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">CloudWatch</code>, <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">Route 53</code>, <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">ALB/NLB</code>, and <code class="text-xs font-mono bg-white/20 text-sky-700 border border-slate-200 px-2 py-0.5 rounded shadow-sm">Lambda</code>.
+                        </p>
+                        <p>
+                            On the operations and reliability side, I champion AWS account management, billing/cost optimization, security hardening (IAM least-privilege), backup & DR policies, Well-Architected operational reviews, automated CI/CD tooling (<span class="text-slate-900 font-semibold">GitHub Actions</span>), and stringent compliance standards (<span class="text-slate-900 font-semibold">SOC 2, ISO 27001, HIPAA</span>).
+                        </p>
                     </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-slate-400 mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="w-full bg-slate-700 border border-slate-600 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500" required>
+                </div>
+
+                <!-- Strategic Pillars Cards (80% Glass) -->
+                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                    
+                    <div class="glass-panel p-5 rounded-2xl">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-9 h-9 rounded-xl bg-sky-100 border border-sky-200 flex items-center justify-center text-sky-600 font-bold">
+                                ☁️
+                            </div>
+                            <h3 class="text-slate-900 font-bold text-sm">Cloud Infrastructure & AWS</h3>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Architecting resilient multi-tier topologies, isolated subnets, containerized EKS/Docker clusters, and auto-scaling workloads with minimal overhead.
+                        </p>
                     </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-slate-400 mb-2">Message</label>
-                        <textarea id="message" name="message" rows="4" class="w-full bg-slate-700 border border-slate-600 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500" required></textarea>
+
+                    <div class="glass-panel p-5 rounded-2xl">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-9 h-9 rounded-xl bg-emerald-100 border border-emerald-200 flex items-center justify-center text-emerald-600 font-bold">
+                                📈
+                            </div>
+                            <h3 class="text-slate-900 font-bold text-sm">SRE & Observability</h3>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Automated CloudWatch telemetry, proactive alerting, server health monitors, and structured incident triage to drastically cut MTTR.
+                        </p>
                     </div>
-                    <div class="text-center">
-                        <button type="submit" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors">Send Message</button>
+
+                    <div class="glass-panel p-5 rounded-2xl">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-9 h-9 rounded-xl bg-indigo-100 border border-indigo-200 flex items-center justify-center text-indigo-600 font-bold">
+                                🔒
+                            </div>
+                            <h3 class="text-slate-900 font-bold text-sm">Security & Compliance Hardening</h3>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Strict enforcement of IAM least privilege, audit logging via CloudTrail, encrypted storage baselines, and SOC 2 / HIPAA compliance regimes.
+                        </p>
                     </div>
-                </form>
+
+                    <div class="glass-panel p-5 rounded-2xl">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-9 h-9 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-600 font-bold">
+                                🧠
+                            </div>
+                            <h3 class="text-slate-900 font-bold text-sm">AI-Native Acceleration</h3>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Leveraging modern AI agents, deep prompt architecture, and intelligent automated workflows to design and ship production apps 5x faster.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= TECHNICAL SKILLS MATRIX (80% GLASS) ================= -->
+        <section id="skills" class="py-16">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="w-8 h-[2px] bg-sky-500 inline-block"></span>
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-600 font-bold">Technical Expertise</span>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Skills & Competencies</h2>
+                    <p class="text-slate-600 text-sm mt-2 max-w-2xl">
+                        A comprehensive matrix of infrastructure, cloud operations, engineering frameworks, and programming tools honed across production and academic environments.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Skill Category 1: AWS Core Infrastructure -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center text-amber-600 font-bold text-lg">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <h3 class="text-slate-900 font-bold text-base">AWS Core Services</h3>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200 font-semibold">Primary</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Deep expertise in provisioning, routing, security, and scalable AWS cloud topology.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">EC2</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">VPC (Subnets, NAT, IGW)</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">IAM</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">S3</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">RDS</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">EKS</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">CloudWatch</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">CloudTrail</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Route 53</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">ALB / NLB</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Lambda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2: DevOps, SRE & CI/CD -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-sky-100 border border-sky-200 flex items-center justify-center text-sky-600 font-bold text-lg">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                                </div>
+                                <h3 class="text-slate-900 font-bold text-base">DevOps & CI/CD Tooling</h3>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200 font-semibold">Automation</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Containerization, automated deployment pipelines, and Linux environment management.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">GitHub Actions</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Docker</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Kubernetes</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Linux Shell Scripting</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Git & GitHub</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Google Cloud (GCP)</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Render & Vite</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Cloudflare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3: Cloud Operations & Compliance -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-100 border border-emerald-200 flex items-center justify-center text-emerald-600 font-bold text-lg">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                                </div>
+                                <h3 class="text-slate-900 font-bold text-base">Operations & Compliance</h3>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold">Governance</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Standards-governed operations, cost rightsizing, and continuous compliance posture.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 text-xs font-mono bg-emerald-50 text-emerald-700 rounded-lg border border-emerald-200 font-semibold shadow-sm">SOC 2</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-emerald-50 text-emerald-700 rounded-lg border border-emerald-200 font-semibold shadow-sm">ISO 27001</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-emerald-50 text-emerald-700 rounded-lg border border-emerald-200 font-semibold shadow-sm">HIPAA Security Controls</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Cost Optimization</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">IAM Least Privilege</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Backup & DR</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Well-Architected Reviews</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Audit Trails</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4: AI & Core Capability -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-600 font-bold text-lg">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                </div>
+                                <h3 class="text-slate-900 font-bold text-base">AI & Core Capability</h3>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-50 text-purple-700 border border-purple-200 font-semibold">Builder</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            AI-native building methodology and agentic engineering to accelerate software delivery.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 text-xs font-mono bg-purple-50 text-purple-700 rounded-lg border border-purple-200 font-semibold shadow-sm">AI-Native Builder</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-purple-50 text-purple-700 rounded-lg border border-purple-200 font-semibold shadow-sm">Deep Prompt Engineering</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">LLM Workforce Platforms</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Automated Content Engines</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Rapid Prototyping</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Autonomous Workflow Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 5: Programming & Databases -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-cyan-100 border border-cyan-200 flex items-center justify-center text-cyan-600 font-bold text-lg">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                                </div>
+                                <h3 class="text-slate-900 font-bold text-base">Programming & Databases</h3>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 border border-cyan-200 font-semibold">Development</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Full-stack versatility across enterprise languages and data persistence engines.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-sky-700 font-semibold rounded-lg border border-slate-200 shadow-sm">Python</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-sky-700 font-semibold rounded-lg border border-slate-200 shadow-sm">Java</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-sky-700 font-semibold rounded-lg border border-slate-200 shadow-sm">SQL</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-sky-700 font-semibold rounded-lg border border-slate-200 shadow-sm">PostgreSQL</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">JavaScript (ES6+)</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">PHP</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">ASP.NET</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">HTML5 & CSS3</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">XML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 6: Tools & Development Environments -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-pink-100 border border-pink-200 flex items-center justify-center text-pink-600 font-bold text-lg">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                </div>
+                                <h3 class="text-slate-900 font-bold text-base">Tools & IDEs</h3>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-pink-50 text-pink-700 border border-pink-200 font-semibold">Ecosystem</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Cutting-edge AI-assisted IDEs, mobile development suites, and developer productivity tools.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Antigravity</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Cursor</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Android Studio</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">VS Code</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Git & Git CLI</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Jest & Puppeteer</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Supabase</span>
+                            <span class="px-2.5 py-1 text-xs font-mono bg-white/20 text-slate-700 rounded-lg border border-slate-200 shadow-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= PROFESSIONAL EXPERIENCE SECTION (80% GLASS) ================= -->
+        <section id="experience" class="py-16">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="w-8 h-[2px] bg-sky-500 inline-block"></span>
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-600 font-bold">Work History</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Professional Experience</h2>
+            <p class="text-slate-600 text-sm max-w-2xl mb-12">
+                Proven production experience delivering enterprise-grade AI platforms, SRE monitoring pipelines, and cloud security governance.
+            </p>
+
+            <!-- Experience Card (80% Glass) -->
+            <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-6">
+                        
+                        <!-- Role Header -->
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200/80 pb-6">
+                            <div>
+                                <span class="inline-block text-xs font-mono px-3 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 font-bold mb-2">
+                                    9 Months Internship
+                                </span>
+                                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Software Developer (AI/ML) Intern</h3>
+                                <p class="text-base text-sky-600 font-semibold">MyOnsite Healthcare Pvt. Ltd.</p>
+                            </div>
+                            <div class="text-left sm:text-right font-mono text-xs text-slate-600 space-y-1">
+                                <div class="flex items-center sm:justify-end gap-1.5 text-slate-800 font-semibold">
+                                    <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Vadodara, Gujarat, India
+                                </div>
+                                <div class="text-slate-500">Enterprise Healthcare Technology</div>
+                            </div>
+                        </div>
+
+                        <!-- Delivered Systems / Impact Grid (80% Glass Blocks) -->
+                        <div class="space-y-4">
+                            <h4 class="text-xs font-mono uppercase tracking-widest text-slate-500 font-bold">Key Production Systems & Initiatives Delivered:</h4>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                
+                                <!-- Astra -->
+                                <div class="bg-white/20 rounded-2xl p-5 border border-white/80 shadow-sm hover:border-sky-400 transition-colors">
+                                    <div class="flex items-center gap-2.5 mb-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                                        <h5 class="text-slate-900 font-bold text-sm">Astra — SRE Telemetry & Monitoring</h5>
+                                    </div>
+                                    <p class="text-xs text-slate-600 leading-relaxed">
+                                        Built and optimized automated CloudWatch telemetry and server monitoring pipelines for the AI-powered infrastructure platform, dramatically reducing <strong class="text-slate-900">MTTR</strong> while enforcing strict <strong class="text-slate-900">HIPAA and SOC 2</strong> security controls.
+                                    </p>
+                                </div>
+
+                                <!-- Cloud Operations -->
+                                <div class="bg-white/20 rounded-2xl p-5 border border-white/80 shadow-sm hover:border-emerald-400 transition-colors">
+                                    <div class="flex items-center gap-2.5 mb-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                                        <h5 class="text-slate-900 font-bold text-sm">Cloud Operations & Well-Architected</h5>
+                                    </div>
+                                    <p class="text-xs text-slate-600 leading-relaxed">
+                                        Spearheaded AWS cost optimization, security hardening (<strong class="text-slate-900">IAM least privilege</strong>), automated disaster recovery backups, and AWS Well-Architected operational reviews across internal applications.
+                                    </p>
+                                </div>
+
+                                <!-- Cognaium -->
+                                <div class="bg-white/20 rounded-2xl p-5 border border-white/80 shadow-sm hover:border-indigo-400 transition-colors">
+                                    <div class="flex items-center gap-2.5 mb-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                                        <h5 class="text-slate-900 font-bold text-sm">Cognaium — Corporate AI Workforce</h5>
+                                    </div>
+                                    <p class="text-xs text-slate-600 leading-relaxed">
+                                        Engineered an all-in-one corporate AI workforce platform managing automated AI skill assessments, employee upskilling training, and internal HR/operations workflows on a single unified pane.
+                                    </p>
+                                </div>
+
+                                <!-- Developer Portal -->
+                                <div class="bg-white/20 rounded-2xl p-5 border border-white/80 shadow-sm hover:border-purple-400 transition-colors">
+                                    <div class="flex items-center gap-2.5 mb-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                                        <h5 class="text-slate-900 font-bold text-sm">Developer Portal — Standardized Onboarding</h5>
+                                    </div>
+                                    <p class="text-xs text-slate-600 leading-relaxed">
+                                        Architected an enterprise-standard onboarding platform guiding incoming engineers through company conventions, internal repositories, CI/CD pipelines, and project workflows.
+                                    </p>
+                                </div>
+
+                                <!-- Work Sync -->
+                                <div class="bg-white/20 rounded-2xl p-5 border border-white/80 shadow-sm hover:border-cyan-400 transition-colors">
+                                    <div class="flex items-center gap-2.5 mb-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span>
+                                        <h5 class="text-slate-900 font-bold text-sm">Work Sync — Governance & Collaboration</h5>
+                                    </div>
+                                    <p class="text-xs text-slate-600 leading-relaxed">
+                                        Developed a high-control project management platform featuring granular task tracking, milestone governance, role-based brace control (RBAC), and team collaboration.
+                                    </p>
+                                </div>
+
+                                <!-- Zero Touch Marketing (ZTM) -->
+                                <div class="bg-white/20 rounded-2xl p-5 border border-white/80 shadow-sm hover:border-amber-400 transition-colors">
+                                    <div class="flex items-center gap-2.5 mb-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                                        <h5 class="text-slate-900 font-bold text-sm">Zero Touch Marketing (ZTM) Engine</h5>
+                                    </div>
+                                    <p class="text-xs text-slate-600 leading-relaxed">
+                                        Engineered an end-to-end automation engine for multi-channel social media marketing, automating AI-driven post generation, asset scheduling, and multi-platform publishing.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                </div>
+        </section>
+
+        <!-- ================= PROJECTS SHOWCASE SECTION (80% GLASS) ================= -->
+        <section id="projects" class="py-16">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="w-8 h-[2px] bg-sky-500 inline-block"></span>
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-600 font-bold">Portfolio Work</span>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Featured Projects</h2>
+                    <p class="text-slate-600 text-sm mt-2 max-w-2xl">
+                        A curation of production e-commerce, cloud SPAs, containerized SaaS APIs, and software applications built for scale and reliability.
+                    </p>
+                </div>
+
+                <!-- Filter Controls (80% Glass) -->
+                <div class="flex flex-wrap gap-2 text-xs font-mono" id="project-filters">
+                    <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl bg-sky-600 text-white font-bold shadow-md shadow-sky-500/20 transition-all">All</button>
+                    <button data-filter="cloud" class="filter-btn px-4 py-2 rounded-xl bg-white/20 text-slate-700 hover:text-sky-600 border border-slate-200/80 transition-all">Cloud & DevOps</button>
+                    <button data-filter="fullstack" class="filter-btn px-4 py-2 rounded-xl bg-white/20 text-slate-700 hover:text-sky-600 border border-slate-200/80 transition-all">Full-Stack & SPA</button>
+                    <button data-filter="apps" class="filter-btn px-4 py-2 rounded-xl bg-white/20 text-slate-700 hover:text-sky-600 border border-slate-200/80 transition-all">Mobile & Web Apps</button>
+                </div>
+            </div>
+
+            <!-- Projects Grid (80% Glass Cards) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+                
+                <!-- Project 1: Ankit Furniture Mart -->
+                <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between group" data-category="fullstack">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold">Commercial Production</span>
+                            <span class="text-slate-500 text-xs font-mono font-medium">Live Customer Site</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
+                            Ankit Furniture Mart
+                        </h3>
+                        <p class="text-xs text-sky-600 font-mono font-semibold mb-3">ankitfurnitures.com</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-5">
+                            Architected and launched a full-featured commercial e-commerce storefront for a bespoke furniture enterprise. Features customer authentication, dynamic catalog browsing, instant quote generation, and interactive consultation/site-measurement scheduling.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Razorpay payment gateway workflows
+                            </div>
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Cloudflare SSL, performance caching & CDN
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-slate-200/60">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">JavaScript</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Firebase</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Razorpay API</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Cloudflare</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">HTML5/CSS3</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="https://ankitfurnitures.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded-xl shadow-md shadow-sky-500/20 transition-colors">
+                                <span>Visit Website</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: AFM Studio -->
+                <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between group" data-category="cloud fullstack">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200 font-bold">Cloud SPA & RBAC</span>
+                            <span class="text-slate-500 text-xs font-mono font-medium">Render & Supabase</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
+                            AFM Studio
+                        </h3>
+                        <p class="text-xs text-sky-600 font-mono font-semibold mb-3">afm-studio.onrender.com</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-5">
+                            Engineered a high-performance client-side Single-Page Application (SPA) with Role-Based Access Control (RBAC) to streamline billing, quotation management, and dynamic document generation without relying on heavy frontend frameworks.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> 300+ DPI client-side PDF export (html2pdf.js)
+                            </div>
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> 100% integrity verified via Puppeteer headless tests
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-slate-200/60">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">JavaScript ES6+</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Supabase</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">PostgreSQL</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Vite</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Puppeteer</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">GitHub Actions</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="https://afm-studio.onrender.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded-xl shadow-md shadow-sky-500/20 transition-colors">
+                                <span>Live Demo</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Acquisitions API -->
+                <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between group" data-category="cloud">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-md bg-purple-50 text-purple-700 border border-purple-200 font-bold">DevOps & Kubernetes</span>
+                            <span class="text-slate-500 text-xs font-mono font-medium">SOC 2 / ISO 27001</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
+                            Acquisitions API
+                        </h3>
+                        <p class="text-xs text-sky-600 font-mono font-semibold mb-3">SaaS Marketplace Microservice</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-5">
+                            Designed a production-grade REST API for a SaaS digital asset marketplace with enterprise architecture, security, and automated GitHub Actions deployment.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Docker & Kubernetes container manifests
+                            </div>
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Isolated VPC subnets & SOC 2 compliance controls
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-slate-200/60">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Node.js</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Express</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">PostgreSQL</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Docker</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Kubernetes</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">GitHub Actions</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Jest</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-mono text-slate-600 font-medium">
+                                <span>Enterprise Manifests Available</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Android Music Player (Bellplay) -->
+                <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between group" data-category="apps">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-md bg-amber-50 text-amber-700 border border-amber-200 font-bold">Android Application</span>
+                            <span class="text-slate-500 text-xs font-mono font-medium">Native Audio Engine</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
+                            Android Music Player (Bellplay)
+                        </h3>
+                        <p class="text-xs text-sky-600 font-mono font-semibold mb-3">Hybrid Audio Engine</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-5">
+                            Architected hybrid music player supporting local file playback and online streaming; developed audio logic in Java with Material Design UI standards.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Seamless local media indexing + online stream pipeline
+                            </div>
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Material Design UI with background service lifecycle
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-slate-200/60">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Java</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">XML</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Android Studio</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">Audio Services</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="https://github.com/vishankit20/bellplay_apk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-800 bg-white hover:bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-300 shadow-sm transition-colors">
+                                <span>Get APK</span>
+                            </a>
+                            <a href="https://github.com/vishankit20/Bellplay" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-600 hover:text-sky-700 font-semibold">
+                                <span>Source Code &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Celebrities Web Application -->
+                <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between group" data-category="apps">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-md bg-cyan-50 text-cyan-700 border border-cyan-200 font-bold">Web Database App</span>
+                            <span class="text-slate-500 text-xs font-mono font-medium">Fast Search</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
+                            Celebrities Web Application
+                        </h3>
+                        <p class="text-xs text-sky-600 font-mono font-semibold mb-3">Global Entertainment Discovery</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-5">
+                            Featured Hollywood artists with upcoming events/movies, regional filtering, film industry databases, and fast search capabilities.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Real-time regional & industry filtering
+                            </div>
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Instant indexing across thousands of media records
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-slate-200/60">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">HTML5</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">JavaScript</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">CSS3</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="https://vishankit20.github.io/global-certificate-project/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded-xl shadow-md shadow-sky-500/20 transition-colors">
+                                <span>View Demo</span>
+                            </a>
+                            <a href="https://github.com/vishankit20/global-certificate-project.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-600 hover:text-sky-700 font-semibold">
+                                <span>Code &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: E-Commerce Platform -->
+                <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between group" data-category="apps">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200 font-bold">E-Commerce Platform</span>
+                            <span class="text-slate-500 text-xs font-mono font-medium">Catalog & Cart Flow</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
+                            Electronics E-Commerce Platform
+                        </h3>
+                        <p class="text-xs text-sky-600 font-mono font-semibold mb-3">Dynamic Electronics Catalog</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-5">
+                            Developed an electronic products catalog with intuitive filtering, responsive design, and frictionless purchasing flows.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Intuitive multi-attribute catalog filtering
+                            </div>
+                            <div class="text-[11px] font-mono text-slate-700 flex items-center gap-1.5 font-medium">
+                                <span class="text-emerald-600 font-bold">✔</span> Responsive layouts optimized for all device widths
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-slate-200/60">
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">HTML5</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">JavaScript</span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/20 text-slate-700 border border-slate-200">CSS3</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="https://vishankit20.github.io/ecom/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded-xl shadow-md shadow-sky-500/20 transition-colors">
+                                <span>View Demo</span>
+                            </a>
+                            <a href="https://github.com/vishankit20/ecom.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-600 hover:text-sky-700 font-semibold">
+                                <span>Code &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= EDUCATION & ACADEMIC BACKGROUND (80% GLASS) ================= -->
+        <section id="education" class="py-16">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="w-8 h-[2px] bg-sky-500 inline-block"></span>
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-600 font-bold">Academic Foundation</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-10">Education</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Master's Degree -->
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl relative group">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono px-3 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 font-bold">
+                            2024 – 2026
+                        </span>
+                        <div class="text-right">
+                            <span class="text-xs font-mono text-slate-500 font-semibold">CGPA:</span>
+                            <span class="text-emerald-600 font-mono font-bold text-base ml-1">8.16 / 10</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Master of Computer Applications (M.C.A.)</h3>
+                    <p class="text-sky-700 font-mono text-sm font-bold mb-3">Specialization in Cloud Computing</p>
+                    <p class="text-slate-800 text-sm font-semibold mb-1">Parul University</p>
+                    <p class="text-slate-500 text-xs font-medium">Vadodara, Gujarat, India</p>
+                    <div class="mt-4 pt-4 border-t border-slate-200/80 text-xs text-slate-600 leading-relaxed">
+                        Rigorous coursework focusing on distributed systems, cloud architectural patterns, virtualization, infrastructure scaling, and automated DevOps operations.
+                    </div>
+                </div>
+
+                <!-- Bachelor's Degree -->
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl relative group">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-bold">
+                            2021 – 2024
+                        </span>
+                        <div class="text-right">
+                            <span class="text-xs font-mono text-slate-500 font-semibold">CGPA:</span>
+                            <span class="text-emerald-600 font-mono font-bold text-base ml-1">8.13 / 10</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Bachelor of Vocation (B.VOC)</h3>
+                    <p class="text-sky-700 font-mono text-sm font-bold mb-3">Software Development</p>
+                    <p class="text-slate-800 text-sm font-semibold mb-1">Laxmi Vidyapeeth</p>
+                    <p class="text-slate-500 text-xs font-medium">Valsad, Gujarat, India</p>
+                    <div class="mt-4 pt-4 border-t border-slate-200/80 text-xs text-slate-600 leading-relaxed">
+                        Comprehensive vocational program covering core programming fundamentals, data structures, relational database engineering, and full-stack software lifecycles.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICATIONS & COMPETITIONS (80% GLASS) ================= -->
+        <section id="certifications" class="py-16">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="w-8 h-[2px] bg-sky-500 inline-block"></span>
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-600 font-bold">Verified Credentials</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-8">Certifications & Competitions</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <!-- Cert 1 -->
+                <div class="glass-panel p-5 rounded-2xl flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-rose-100 border border-rose-200 flex items-center justify-center text-rose-600 font-bold shrink-0">
+                        🛡️
+                    </div>
+                    <div>
+                        <h3 class="text-slate-900 font-bold text-sm leading-snug">Basics of Cyber Security & VAPT</h3>
+                        <p class="text-xs text-slate-600 mt-1">Vulnerability Assessment & Penetration Testing</p>
+                        <span class="inline-block mt-2 text-[10px] font-mono px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 font-semibold">Security</span>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="glass-panel p-5 rounded-2xl flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center text-amber-600 font-bold shrink-0">
+                        📜
+                    </div>
+                    <div>
+                        <h3 class="text-slate-900 font-bold text-sm leading-snug">IT Specialist – JavaScript</h3>
+                        <p class="text-xs text-slate-600 mt-1">Certiport – A Pearson VUE Business</p>
+                        <span class="inline-block mt-2 text-[10px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200 font-semibold">Pearson VUE</span>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="glass-panel p-5 rounded-2xl flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-sky-100 border border-sky-200 flex items-center justify-center text-sky-600 font-bold shrink-0">
+                        📜
+                    </div>
+                    <div>
+                        <h3 class="text-slate-900 font-bold text-sm leading-snug">IT Specialist – HTML & CSS</h3>
+                        <p class="text-xs text-slate-600 mt-1">Certiport – A Pearson VUE Business</p>
+                        <span class="inline-block mt-2 text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200 font-semibold">Pearson VUE</span>
+                    </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="glass-panel p-5 rounded-2xl flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-100 border border-cyan-200 flex items-center justify-center text-cyan-600 font-bold shrink-0">
+                        🗄️
+                    </div>
+                    <div>
+                        <h3 class="text-slate-900 font-bold text-sm leading-snug">DBMS Course – Fundamentals & Advanced</h3>
+                        <p class="text-xs text-slate-600 mt-1">Relational schema design, SQL, index optimization</p>
+                        <span class="inline-block mt-2 text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 border border-cyan-200 font-semibold">Databases</span>
+                    </div>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="glass-panel p-5 rounded-2xl flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-600 font-bold shrink-0">
+                        🏆
+                    </div>
+                    <div>
+                        <h3 class="text-slate-900 font-bold text-sm leading-snug">District Level Competition GK/GS</h3>
+                        <p class="text-xs text-slate-600 mt-1">Recognized for analytical excellence & general studies</p>
+                        <span class="inline-block mt-2 text-[10px] font-mono px-2 py-0.5 rounded bg-purple-50 text-purple-700 border border-purple-200 font-semibold">Competition</span>
+                    </div>
+                </div>
+
+                <!-- Summary Callout (80% Glass) -->
+                <div class="glass-panel p-5 rounded-2xl flex items-center justify-center text-center bg-sky-50/40">
+                    <div>
+                        <div class="text-sky-700 font-bold text-sm">Continuous Learning Mindset</div>
+                        <p class="text-xs text-slate-600 mt-1">Actively preparing for AWS Solutions Architect & CKA certifications.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= CONTACT & GET IN TOUCH SECTION (80% GLASS) ================= -->
+        <section id="contact" class="py-16">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="w-8 h-[2px] bg-sky-500 inline-block"></span>
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-600 font-bold">Connect & Collaborate</span>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left: Contact Details & Quick Channels -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Let's Connect & Build</h2>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            Whether you have an open DevOps / Cloud / SRE position, need architecture consulting on AWS, or want to discuss AI-native platform engineering, my inbox is always open.
+                        </p>
+                    </div>
+
+                    <!-- Direct Reach Cards (80% Glass) -->
+                    <div class="space-y-3">
+                        
+                        <!-- Email Card with Copy button -->
+                        <div class="glass-panel p-4 rounded-2xl flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <div class="w-10 h-10 rounded-xl bg-sky-100 border border-sky-200 flex items-center justify-center text-sky-600 shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">Email Address</div>
+                                    <a href="mailto:vishankit20@gmail.com" class="text-sm font-bold text-slate-900 hover:text-sky-600 transition-colors truncate block">
+                                        vishankit20@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            <button id="copy-email-btn" class="p-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 hover:text-sky-600 transition-colors border border-slate-200 shadow-sm shrink-0" title="Copy to clipboard">
+                                <svg id="copy-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                                <svg id="check-icon" class="w-4 h-4 text-emerald-600 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            </button>
+                        </div>
+
+                        <!-- LinkedIn Card -->
+                        <a href="https://linkedin.com/in/ankit-vishwakarma-155614228" target="_blank" rel="noopener noreferrer" class="glass-panel p-4 rounded-2xl flex items-center justify-between gap-4 hover:border-sky-400 transition-colors group block">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600 shrink-0">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">LinkedIn</div>
+                                    <div class="text-sm font-bold text-slate-900 group-hover:text-sky-600 transition-colors">
+                                        in/ankit-vishwakarma-155614228
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="w-4 h-4 text-slate-400 group-hover:text-sky-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+
+                        <!-- GitHub Card -->
+                        <a href="https://github.com/vishankit20" target="_blank" rel="noopener noreferrer" class="glass-panel p-4 rounded-2xl flex items-center justify-between gap-4 hover:border-sky-400 transition-colors group block">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-600 shrink-0">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                                </div>
+                                <div>
+                                    <div class="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">GitHub</div>
+                                    <div class="text-sm font-bold text-slate-900 group-hover:text-sky-600 transition-colors">
+                                        github.com/vishankit20
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="w-4 h-4 text-slate-400 group-hover:text-sky-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+
+                        <!-- Location Card -->
+                        <div class="glass-panel p-4 rounded-2xl flex items-center gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 border border-emerald-200 flex items-center justify-center text-emerald-600 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">Location</div>
+                                <div class="text-sm font-bold text-slate-900">Valsad, Gujarat, India (Open to Remote & Relocation)</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Contact Form (80% Glass) -->
+                <div class="lg:col-span-7">
+                    <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-xl">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Send a Message</h3>
+                        <p class="text-xs text-slate-600 mb-6">Fill in the details below and I'll get back to you promptly.</p>
+                        
+                        <form action="https://formspree.io/f/mrbapyyv" method="POST" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-xs font-mono text-slate-600 mb-1.5 uppercase tracking-wider font-semibold">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full bg-white/20 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 text-sm focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all shadow-sm">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-xs font-mono text-slate-600 mb-1.5 uppercase tracking-wider font-semibold">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="john@company.com" required class="w-full bg-white/20 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 text-sm focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all shadow-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-xs font-mono text-slate-600 mb-1.5 uppercase tracking-wider font-semibold">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="DevOps Role / Project Discussion" class="w-full bg-white/20 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 text-sm focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all shadow-sm">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-mono text-slate-600 mb-1.5 uppercase tracking-wider font-semibold">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Hello Ankit, we came across your portfolio and would love to discuss..." required class="w-full bg-white/20 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 text-sm focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all shadow-sm"></textarea>
+                            </div>
+
+                            <div id="form-status" class="hidden rounded-xl p-3 text-xs font-mono"></div>
+
+                            <button type="submit" id="submit-btn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold text-sm px-8 py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition-all hover:translate-y-[-1px]">
+                                <span id="submit-btn-text">Send Message</span>
+                                <svg id="submit-btn-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </section>
 
     </main>
 
+    <!-- Floating Back-to-Top Button -->
+    <button id="back-to-top" aria-label="Back to top" class="fixed bottom-6 right-6 p-3 rounded-full bg-white/80 text-sky-600 hover:text-white hover:bg-sky-600 border border-slate-300 shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-40 backdrop-blur-md">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+    </button>
+
     <!-- Footer -->
-    <footer class="bg-slate-900 border-t border-slate-800">
-        <div class="container mx-auto px-6 py-6 text-center text-slate-500">
-             <div class="flex justify-center gap-4 mb-4">
-                
-                <a href="https://github.com/vishankit20" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors">GitHub</a>
-                <span>&middot;</span>
-                <a href="https://www.linkedin.com/in/ankit-vishwakarma-155614228" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors">LinkedIn</a>
+    <footer class="border-t border-slate-200/80 bg-white/40 backdrop-blur-md py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-mono font-bold text-sm border border-sky-200">
+                    AV
+                </div>
+                <div>
+                    <span class="text-slate-900 font-bold text-sm">Ankit Vishwakarma</span>
+                    <span class="text-xs text-slate-500 block">DevOps / Cloud & SRE Engineer • AI-Native Builder</span>
+                </div>
             </div>
-            <p>&copy; 2025 Ankit Vishwakarma. All rights reserved.</p>
+
+            <div class="flex items-center gap-6 text-xs text-slate-600 font-mono">
+                <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
+                <a href="#skills" class="hover:text-slate-900 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-slate-900 transition-colors">Projects</a>
+                <a href="https://github.com/vishankit20" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition-colors">GitHub</a>
+                <a href="https://linkedin.com/in/ankit-vishwakarma-155614228" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition-colors">LinkedIn</a>
+            </div>
+
+            <div class="text-xs text-slate-500 font-mono text-center md:text-right">
+                Designed for high performance & scalability. &copy; 2026 Ankit Vishwakarma.
+            </div>
         </div>
     </footer>
 
+    <!-- Interactive JavaScript -->
     <script>
-        
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+        const menuOpen = document.getElementById('menu-icon-open');
+        const menuClose = document.getElementById('menu-icon-close');
 
-        mobileMenuButton.addEventListener('click', () => {
+        menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            menuOpen.classList.toggle('hidden');
+            menuClose.classList.toggle('hidden');
         });
 
-        
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetElement = document.querySelector(this.getAttribute('href'));
-                if(targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuOpen.classList.remove('hidden');
+                menuClose.classList.add('hidden');
+            });
+        });
+
+        // Copy Email to Clipboard Functionality
+        const copyBtn = document.getElementById('copy-email-btn');
+        const copyIcon = document.getElementById('copy-icon');
+        const checkIcon = document.getElementById('check-icon');
+
+        if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+                navigator.clipboard.writeText('vishankit20@gmail.com').then(() => {
+                    copyIcon.classList.add('hidden');
+                    checkIcon.classList.remove('hidden');
+                    setTimeout(() => {
+                        copyIcon.classList.remove('hidden');
+                        checkIcon.classList.add('hidden');
+                    }, 2000);
+                });
+            });
+        }
+
+        // Project Category Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-sky-600', 'text-white', 'shadow-md', 'shadow-sky-500/20');
+                    b.classList.add('bg-white/20', 'text-slate-700', 'border', 'border-slate-200/80');
+                });
+                btn.classList.remove('bg-white/20', 'text-slate-700', 'border', 'border-slate-200/80');
+                btn.classList.add('bg-sky-600', 'text-white', 'shadow-md', 'shadow-sky-500/20');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute('data-category');
+                    if (filter === 'all' || (categories && categories.includes(filter))) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Active Scroll-Spy for Navigation Links
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 140;
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
                 }
-                
-                if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-sky-600', 'font-bold');
+                link.classList.add('text-slate-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-slate-600');
+                    link.classList.add('text-sky-600', 'font-bold');
                 }
             });
         });
-    </script>
 
+        // Floating Back-to-Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // AJAX Form Handling
+        const contactForm = document.querySelector('form[action*="formspree.io"]');
+        const formStatus = document.getElementById('form-status');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitBtnText = document.getElementById('submit-btn-text');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                submitBtn.disabled = true;
+                submitBtnText.textContent = 'Sending...';
+
+                const formData = new FormData(contactForm);
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (response.ok) {
+                        formStatus.className = 'rounded-xl p-3 text-xs font-mono bg-emerald-50 border border-emerald-300 text-emerald-800 block mb-4';
+                        formStatus.textContent = '✔ Thank you! Your message has been sent successfully. I will get back to you shortly.';
+                        contactForm.reset();
+                    } else {
+                        throw new Error('Form response not ok');
+                    }
+                } catch (err) {
+                    formStatus.className = 'rounded-xl p-3 text-xs font-mono bg-rose-50 border border-rose-300 text-rose-800 block mb-4';
+                    formStatus.textContent = '✖ Could not send message automatically. Please email me directly at vishankit20@gmail.com.';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtnText.textContent = 'Send Message';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
